@@ -2,9 +2,39 @@
 
 /*==========  Desktop First  ==========*/
 
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1600px)
+    .wrap-nadine-bomer
+      .main-section
+        .image-left
+          width: 500px
+          height: 500px
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1400px)
+    .wrap-nadine-bomer
+      .header
+        min-height: 680px
+      .main-section
+        .image-left
+          width: 450px
+          height: 450px
+
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+    .wrap-nadine-bomer
+      .main-section
+        .first-content
+          width: 70%
+        .second-content
+          width: 70%
+        .image-left
+          width: 350px
+          height: 350px
+          left: 15px
 
 
 /* Medium Devices, Desktops */
@@ -46,6 +76,29 @@
         .form-row
           width: 80%
 
+      .main-section
+        .image-left
+          display: none
+        .first-content
+          text-align: center
+          p
+            margin-bottom: 40px
+        .section-content
+          align-items: center
+          .wrap-img
+            margin-bottom: 10px
+          ul
+            flex-direction: column
+            align-items: center
+          li
+            flex-direction: column
+            margin-bottom: 35px
+            .second-item
+              padding: 0
+        .title-second-content
+          text-align: center
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 600px)
@@ -65,7 +118,11 @@
         .form-row
           width: 100%
 
-
+      .main-section
+        .first-content
+          width: 80%
+        .second-content
+          width: 80%
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px)
@@ -96,6 +153,12 @@
           margin: 0 0 20px
         .form-row
           margin-bottom: 12px
+
+      .main-section
+        .first-content
+          width: 100%
+        .second-content
+          width: 100%
 
 
 /* Custom, iPhone Retina */
