@@ -26,6 +26,7 @@
 
 	<link rel="stylesheet" href="css/main.min.css">
 
+
 </head>
 
 <body>
@@ -57,7 +58,7 @@
 							<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם פרטי">
 						</div>
 						<div class="form-row">
-							<input name="name" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם משפחה">
+							<input name="lname" class="form-control" required data-required="true" type="text" pattern="^[A-Zא-תa-z ]{1,50}$"  placeholder="*שם משפחה">
 						</div>
 						<div class="form-row">
 							<input name="tel" class="form-control" required data-required="true" type="text" placeholder="*טלפון" pattern="(((02)|(03)|(04)|(08)|(09)){1}[\d]{7,8})|(((071)|(072)|(073)|(074)|(076)|(077)|(078)|(079)|(050)|(051)|(052)|(053)|(054)|(055)|(056)|(058)|(059)){1}[\d]{6,7})" title="International, state or local telephone number">
@@ -65,9 +66,16 @@
 						<div class="form-row">
 							<input name="email" required class="form-control" type="email" placeholder="*מייל">
 						</div>
-						<div class="form-row">
-							<select required name="branch" id="branch-id" class="form-control">
-								<option value="" selected data-default>*בחר סניף</option>
+						<!--<div class="form-row">-->
+							<!--<select required name="branch" id="branch-id" class="form-control">-->
+								<!--<option value="" selected data-default>*בחר סניף</option>-->
+								<!--<option value="סניף ראשון לציון">סניף ראשון לציון</option>-->
+								<!--<option value="סניף ראש העין">סניף ראש העין</option>-->
+							<!--</select>-->
+						<!--</div>-->
+						<div class="form-row center">
+							<select required name="sources" id="sources" class="form-control custom-select sources" placeholder="*בחר סניף">
+								<!--<option value="" selected data-default>*בחר סניף</option>-->
 								<option value="סניף ראשון לציון">סניף ראשון לציון</option>
 								<option value="סניף ראש העין">סניף ראש העין</option>
 							</select>

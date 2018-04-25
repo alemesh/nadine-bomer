@@ -119,7 +119,9 @@ ul
 
 		//============== form section ===================
 		//.main-holder
-		//	min-height: 912px
+		//	overflow: visible
+			//min-height: 912px
+
 	.wrap-form-hold
 		//position: absolute
 		//bottom: 0
@@ -127,6 +129,8 @@ ul
 		//width: 100%
 		//padding: 0 30px
 		margin-top: -150px
+		.main-holder
+			overflow: visible
 
 	.form-hold
 		z-index: 2222222
@@ -486,6 +490,148 @@ ul
 
 	.slick-next:before, .slick-prev:before
 		content: none
+
+	//===================== custom select ================================
+	.custom-select-wrapper
+		position: relative
+		display: inline-block
+		user-select: none
+		width: 100%
+
+		.custom-select-wrapper select
+			display: none
+
+		.custom-select
+			position: relative
+			display: inline-block
+			background: white
+
+
+		.custom-select-trigger
+			position: relative
+			display: block
+			font-weight: 300
+			color: #bababa
+			cursor: pointer
+			margin-top: 5px
+
+		.custom-select-trigger:after
+			position: absolute
+			display: block
+			content: ''
+			width: 10px
+			height: 10px
+			top: 50%
+			left: 15px
+			margin-top: -3px
+			border-bottom: 1px solid #bababa
+			border-right: 1px solid #bababa
+			transform: rotate(45deg) translateY(-50%)
+			transition: all .4s ease-in-out
+			transform-origin: 50% 0
+
+		.custom-select.opened .custom-select-trigger:after
+			margin-top: 3px
+			transform: rotate(-135deg) translateY(-50%)
+			z-index: 999999
+
+		.custom-options
+			position: absolute
+			display: block
+			top: 100%
+			left: 0
+			right: 0
+			min-width: 100%
+			margin: 15px 0
+			border: 1px solid #b5b5b5
+			border-radius: 4px
+			box-sizing: border-box
+			box-shadow: 0 2px 1px rgba(0,0,0,.07)
+			background: #fff
+			transition: all .4s ease-in-out
+
+			opacity: 0
+			visibility: hidden
+			pointer-events: none
+			transform: translateY(-15px)
+
+		.custom-select.opened .custom-options
+			opacity: 1
+			visibility: visible
+			pointer-events: all
+			transform: translateY(0)
+
+		.custom-options:before
+			position: absolute
+			display: block
+			content: ''
+			bottom: 100%
+			right: 25px
+			width: 7px
+			height: 7px
+			margin-bottom: -4px
+			border-top: 1px solid #b5b5b5
+			border-left: 1px solid #b5b5b5
+			background: #fff
+			transform: rotate(45deg)
+			transition: all .4s ease-in-out
+
+		.option-hover:before
+			background: #f9f9f9
+
+		.custom-option
+			position: relative
+			display: block
+			padding: 0 22px
+			border-bottom: 1px solid #b5b5b5
+			font-size: 18px
+			font-weight: 600
+			color: #b5b5b5
+			line-height: 47px
+			cursor: pointer
+			transition: all .4s ease-in-out
+
+		.custom-option:first-of-type
+			border-radius: 4px 4px 0 0
+
+		.custom-option:last-of-type
+			border-bottom: 0
+			border-radius: 0 0 4px 4px
+
+		.custom-option:hover,
+		.custom-option.selection
+			background: #f9f9f9
+
+
+	//===================== finish custom select ================================
+
+	//================= thanks page ====================================
+
+	.wrap-thanks-page
+		.header
+			min-height: 619px
+		.thanks-massage
+			text-align: center
+			margin-top: 300px
+			direction: rtl
+			h3
+				font-size: 46px
+				font-family: "OpenSansHebrew-Bold"
+				color: rgb(1, 1, 1)
+				font-weight: bold
+				line-height: 0.822
+			p
+				font-family: "OpenSansHebrew-Regular"
+				font-size: 28px
+				line-height: 1.2
+
+
+
+
+
+
+
+
 
 
 
