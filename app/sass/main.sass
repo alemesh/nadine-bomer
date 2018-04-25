@@ -233,14 +233,14 @@ ul
 
 	.main-section
 		width: 100%
-		min-height: 1370px
+		//min-height: 1370px
 		position: relative
 		background-image: url(../img/background-main-section.png)
 		background-size: cover
 		background-position: right
 		margin-top: -230px
 		padding-top: 300px
-		opacity: 0.75
+		//opacity: 0.75
 		.section-content
 			position: relative
 			display: flex
@@ -269,6 +269,7 @@ ul
 
 		.second-content
 			width: 60%
+			margin-bottom: 120px
 			ul
 				position: relative
 				display: flex
@@ -293,7 +294,7 @@ ul
 				//border-radius: 50%
 				//background-color: #4dcfd7
 				min-height: 100px
-				min-width: 130px
+				min-width: 110px
 
 		.title-second-content
 			font-size: 30px
@@ -311,14 +312,180 @@ ul
 			background-image: url(../img/girl-bg-img.png)
 			background-size: cover
 
+	.slider-section
+		position: relative
+		.title-footer
+			direction: rtl
+			text-align: right
+			font-size: 30px
+			font-family: "OpenSansHebrew-Bold"
+			color: rgb(255, 255, 255)
+			font-weight: bold
+			line-height: 1.2
+			margin-bottom: 40px
+			padding: 0 15px
+		ul
+			position: relative
+			display: flex
+			justify-content: center
+			padding: 0 15px
+			margin: 0 -12px
+			flex-wrap: nowrap
+		li
+			font-size: 21px
+			font-family: "OpenSansHebrew-Regular"
+			color: rgb(255, 255, 255)
+			line-height: 1.296
+			list-style: none
+			padding: 0 12px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 16.6%
+		.wrap-img-footer
+			margin-bottom: 15px
+
+	.footer
+		font-size: 18px
+		font-family: "OpenSansHebrew-Regular"
+		color: rgb(255, 255, 255)
+		line-height: 1.805
+		position: relative
+		margin-top: 80px
+		text-align: center
+		padding: 60px 0
+		&:after
+			content: ''
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translate(-50%,-50%)
+			height: 2px
+			width: 100px
+			background: white
 
 
 
+	////======================= slic options ====================================
+    //
+	//.slick-next
+	//	//display: none !important
+	//	//background: black
+	//	right: -25px
+	//	z-index: 25
+	//	width: 55px
+	//	height: 90px
+	//	&:before
+	//		content: ''
+	//		border-bottom: 3px solid white
+	//		border-right: 3px solid white
+	//		width: 12px
+	//		height: 12px
+	//		right: 4px
+	//		display: inline-block
+	//		vertical-align: middle
+	//		transform: rotate(-45deg)
+	//		position: relative
+	//.slick-prev
+	//	//display: none !important
+	//	//background: black
+	//	left: -25px
+	//	z-index: 25
+	//	width: 55px
+	//	height: 90px
+	//	&:before
+	//		content: ''
+	//		border-bottom: 3px solid white
+	//		border-left: 3px solid white
+	//		width: 12px
+	//		height: 12px
+	//		left: 4px
+	//		display: inline-block
+	//		vertical-align: middle
+	//		transform: rotate(45deg)
+	//		position: relative
+    //
+	//.slick-prev:hover, .slick-next:hover
+	//	//background: black
+	//.slick-prev:focus, .slick-next:focus
+	//	//background: black
+    //
+	////=================================
 
 
+	.slick-slider
+	direction: ltr
+	position: relative
+	display: block
+	box-sizing: border-box
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+	-ms-touch-action: pan-y
+	touch-action: pan-y
+	-webkit-tap-highlight-color: transparent
 
+	.slick-list
+		position: relative
+		overflow: hidden
+		display: block
+		margin: 0
+		padding: 0
+		width: 100%
+		transform: translate3d(0, 0, 0)
+		&:focus
+			outline: none
+		&.dragging
+			cursor: pointer
+			cursor: hand
 
+	.slick-track
+		position: relative
+		left: 0
+		top: 0
+		display: block
+		transform: translate3d(0, 0, 0)
 
+		&:before,
+		&:after
+			content: ""
+			display: table
+
+		&:after
+			clear: both
+
+	.slick-slide
+		float: left
+		height: 100%
+		min-height: 200px
+
+	.slick-arrow
+		position: absolute
+		border: none
+		outline: none
+		top: 40%
+		width: 25px
+		height: 25px
+		border-left: 5px solid white
+		border-top: 5px solid white
+		z-index: 99999
+
+	.slick-next
+		right: 20px
+		transform: translateY(-50%) rotate(135deg)
+	.slick-prev
+		left: 20px
+		transform: translateY(-50%) rotate(-45deg)
+
+	.slick-arrow.slick-hidden
+		display: none
+
+	.slick-next:before, .slick-prev:before
+		content: none
 
 
 
