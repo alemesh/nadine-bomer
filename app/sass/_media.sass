@@ -144,21 +144,44 @@
 @media only screen and (max-width : 480px)
 	.wrap-nadine-bomer
       .header
-        background-image: url(../img/bg-header-mobile.png) !important
-        min-height: 340px
+        //background-image: url(../img/bg-header-mobile.png) !important
+        background-image: url(../img/bg-mobi2.jpg) !important
+        //min-height: 340px
+        min-height: 430px
         //.main-holder
         //  min-height: 300px
 
         .title-section
+          flex-direction: column
+          margin-top: 0
           .title
-            font-size: 18px
+            font-size: 21px
+            line-height: 2.8
           span
-            font-size: 15px
+            font-size: 20px
+            font-family: "OpenSansHebrew-Regular"
+
           .signature
+            margin: 0 auto
+            margin-bottom: 20px
             img
-              max-height: 46px
+              max-height: 70px
           .wrap-title
             padding: 0 10px 0 0
+            order: 2
+            align-items: center
+            justify-content: center
+            border-right: none
+            text-align: center
+            padding: 0
+          .hidden-desctop
+            display: inline-block
+            padding: 0 22px
+
+          .hidden-mobile
+            display: none
+
+
       .wrap-form-hold
         margin-top: 0
       .form-hold
@@ -178,6 +201,44 @@
 
       .hidden-mobile
         display: none
+
+      .main-section
+        .section-content
+          .mobile-button
+            margin-bottom: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            direction: rtl
+            a
+              background: #ffc20e
+              min-width: 260px
+              display: flex
+              justify-content: center
+              align-items: center
+              font-family: "OpenSansHebrew-Bold"
+              font-size: 19px
+              color: black
+              border-radius: 27px
+              padding: 8px 0
+
+      .wrap-footer
+        padding: 20px 0
+        background: #ffc20e
+        margin-top: 20px
+        .signature
+          display: flex
+          justify-content: center
+          align-items: center
+          margin-bottom: 20px
+          img
+            max-height: 71px
+      .footer
+        padding: 20px 0 0
+        margin-top: 0
+        color: black
+
+
 
       .wrap-thanks-page
         .header
