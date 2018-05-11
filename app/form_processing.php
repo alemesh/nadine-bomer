@@ -45,6 +45,16 @@ foreach ($targetEmail as $val){
 }
 
 
+//========== xml backups lids ================
+
+$today = date("F j, Y, g:i a");
+
+$file = 'sample.csv';
+$tofile = "$ufname;$lname;$uphone;$umail;$sources;$today\n";
+$bom = "\xEF\xBB\xBF";
+@file_put_contents($file, $bom . $tofile . file_get_contents($file));
+
+
 $redirectToTnxPage = 'http://campaign.gofmans.co.il/nadine-bomer/thanks-page.html?Lead=true';
 //$redirectToTnxPage = 'http://192.168.89.147/thanks-page.html?Lead=true';
 // redirect
